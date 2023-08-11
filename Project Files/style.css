@@ -1,0 +1,402 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    border: none;
+    outline: none;
+}
+
+:root{
+    --bg-color: #191919;
+    --second-bg-color:#101010;
+    --main-color:#e920f7;
+    --text-color:#fff;
+    --second-color:#e4e4e4;
+    --other-color:#c6c9d8bf;
+    --h1-font:7rem;
+    --h2-font:3.5rem;
+    --h3-font:2rem;
+    --p-font:1.1rem;
+    
+}
+
+header h2{
+    font-size: var(--h2-font);
+    color: aquamarine;
+}
+
+body{
+    color: var(--text-color);
+    background: var(--second-bg-color);
+}
+
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: 50px transparent;
+    padding: 28px 11%;
+    border-bottom: 1px solid transparent;
+    transition: all ease .50s;
+
+}
+
+.navlist{
+    display: flex;
+
+}
+
+.navlist a{
+    color: aquamarine;
+    font-size: var(--p-font);
+    font-weight: 600;
+    margin: 0 40px;
+    transition: all ease .40s;
+}
+
+.navlist a:hover{
+    color: var(--main-color);
+}
+
+#menu-icon{
+    font-size: 42px;
+    color: var(--second-bg-color);
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+section{
+    padding: 120px 19% 100px;
+
+}
+
+.home{
+    position: relative;
+    min-height: 100vh;
+    width: 100%; 
+    background: url(image1.jpg);  
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+    align-items: center;
+    justify-content: flex-start;
+    gap: 6rem;
+}
+
+.intro h3{
+    color: var(--second-bg-color);
+    font-size: 22px;
+    font-weight: 600;
+    padding-top: 20px;
+    margin-bottom: 15px;
+    word-spacing: 10px;
+}
+
+.intro h1{
+    font-family: 'Dosis', sans-serif;
+    font-size: var(--h1-font);
+    color: black;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.intro h4{
+    color: var(--second-bg-color);
+    font-size: 25px;
+    font-weight: 600;
+    word-spacing: 5px;
+    margin-bottom: 3.5rem;
+
+}
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+    align-items: center;
+    gap: 5rem;
+    background: #191919;
+    
+}
+
+.about-img img{
+    width: 100%;
+    height: auto;
+
+}
+.about-text h5{
+    font-size: 22px;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+.about-text p{
+    color: var(--other-color);
+    font-size: var(--p-font);
+    line-height: 30px;
+    margin-bottom: 3rem;
+    
+}
+.btn{
+    display: inline-block;
+    padding: 16px 45px;
+    background: rgb(248, 3, 93);
+    color: var(--text-color);
+    font-size: var(--p-font);
+    font-weight: 600;
+    border: 2px solid var(--second-color);
+}
+
+.skills{
+    width: 100%;
+    height: 800px;
+  }
+  
+.row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+    
+}
+  
+.skills-title h2{
+    text-align: center;
+    color:white;
+    font-size: 70px;
+    padding-top: 20px;
+}
+  
+.col{
+    float: left;
+    width: 25%;
+    padding: 30px;
+    padding-right: 10px;
+}
+.col img{
+    margin-top: 50px;
+    height: 100px;
+    width: 200px;
+}
+.col h3{
+    font-size: var(--h3-font);
+    text-align: center;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+.col span{
+    font-size: var(--p-font);
+    text-align: center;
+    padding-left: 50px;
+}
+
+.projects{
+    width: 100%;
+    height:50pc;
+    background: #191919;
+  }
+  
+.projects .row {
+    width: 100%;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+    
+}
+  
+.text-container h2{
+    text-align: center;
+    color:white;
+    font-size: 70px;
+    padding-top: 20px;
+}
+  
+.projects .col{
+    float: left;
+    width: 33.33%;
+    padding: 30px;
+    padding-right: 10px;
+}
+.projects .col img{
+    margin-top: 50px;
+    height: 250px;
+    padding: 0%;
+    width: 100%;
+}
+.projects .col h3{
+    font-size: var(--h3-font);
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+.contact-me{
+    width:100%;
+    height: 290px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact-me p{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+  
+.contact-me form{
+    width: 380px;
+    max-width: 100%;
+    position: relative;
+    margin-bottom: 15px;
+  
+}
+
+.contact-me form input:first-child{
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border:2px solid #f9004d;
+    outline: none;
+    border-radius: 30px;
+  
+}
+.contact-me form input:last-child{
+    position: absolute;
+    display:inline-block;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color:#f9004d;
+    color: white;
+    box-shadow:0px 0px 5px #000, 0px 0px 15px #858585;
+    top: 6px;
+    right: 6px; 
+}
+
+.contact-me span{
+    font-size: 17px;
+    color: white;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+} 
+
+@media (max-width:1600px){
+    header{
+        padding: 14px 4%;
+    }
+    section{
+        padding: 100px 5% 80px;
+    }
+}
+@media (max-width: 1200px) {
+
+    .home{
+        min-height: 90vh;
+    }
+    
+    .navlist a{ 
+        margin: 0 20px;
+    }
+    
+    :root{
+    --h1-font: 7rem;
+    --h2-font: 3.1rem; 
+    --p-font: 1rem;
+    
+    }
+}
+@media (max-width:1060px) {
+
+    .about{
+        grid-template-columns: 1fr;
+    
+    }
+    
+    .about-img{ 
+        text-align: center;
+        order: 2;
+    
+    }
+    .about-img img{ 
+        max-width: 100%; 
+        width: 600px; 
+        height: auto;
+
+    } 
+    .skills{
+        grid-template-columns: repeat (auto-fit, minmax (350px, auto));
+    
+    } 
+    .projects{
+        grid-template-columns: repeat (auto-fit, minmax (350px, auto));
+    
+    } 
+
+
+    
+}
+
+@media (max-width: 870px) {
+
+    #menu-icon{ 
+        display: block;
+    
+    }
+    
+    .navlist{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        Left: 0;
+        display: flex; 
+        flex-direction: column; 
+        background: #000; 
+        padding: 20px 0; 
+        text-align: left; 
+        transition: all .50s ease;
+    
+    }
+    .navlist a{
+        display: block;
+        font-size: 22px;
+        padding: 5px 0;
+    }
+    .navlist.open{
+        top: 100%;
+
+    }
+    
+}
+@media (max-width:660px) {
+    .home{
+        min-height: 80vh;
+    
+    }
+    
+    :root{
+        --h1-font: 3.8rem; 
+        --h2-font: 2.7rem; 
+        --p-font: 15px;
+    
+    }
+    
+    .intro h4{ 
+        font-size: 18px; 
+        word-spacing: 10px; 
+        margin-bottom: 30px;
+    
+    }
+}
